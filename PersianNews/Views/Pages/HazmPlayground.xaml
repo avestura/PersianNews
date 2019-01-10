@@ -1,0 +1,45 @@
+﻿<Page x:Class="PersianNews.Views.Pages.HazmPlayground"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:fa="http://schemas.fontawesome.io/icons/"
+      xmlns:local="clr-namespace:PersianNews.Views.Pages"
+      mc:Ignorable="d"
+      FontSize="20"
+      Background="White"
+      FontFamily="{StaticResource Fonts.IRMitra}"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HazmPlayground">
+
+    <Grid FlowDirection="RightToLeft">
+        <StackPanel Margin="10">
+            <TextBlock>با نام و یاد خدا</TextBlock>
+            <TextBox TextChanged="TextBox_TextChanged" MinHeight="200" AcceptsReturn="True" x:Name="inputField" x:FieldModifier="private">
+                اگر دیدی جوانی بر درختی 6 بار تکیه کرده، بدان عاشق شدست و گریه کرده. لاکن باید هشیار بود!
+            </TextBox>
+            <Button x:Name="btn" Click="Button_Click">
+                <StackPanel Orientation="Horizontal">
+                    <fa:ImageAwesome x:Name="icon" Margin="0 0 10 0" Icon="FileText" Width="16" Foreground="#FF2F2F2F"/>
+                    <TextBlock>پردازش</TextBlock>
+                </StackPanel>
+            </Button>
+            <WrapPanel Orientation="Horizontal">
+                <TextBlock Foreground="Green">کلمات جدا شده:</TextBlock>
+                <TextBlock TextWrapping="Wrap" x:Name="TokenizedText"></TextBlock>
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal">
+                <TextBlock Foreground="Green">جملات جدا شده:</TextBlock>
+                <TextBlock TextWrapping="Wrap" x:Name="TokenizedSent"></TextBlock>
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal">
+                <TextBlock Foreground="Green">متن استم شده:</TextBlock>
+                <TextBlock TextWrapping="Wrap" x:Name="StemField"></TextBlock>
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal">
+                <TextBlock Foreground="Green" Text="متن با تگ:"/>
+                <TextBlock TextWrapping="Wrap" x:Name="POSTagField" />
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Page>
