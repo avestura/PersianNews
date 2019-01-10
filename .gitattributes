@@ -65,3 +65,7 @@
 NHazm*/* linguist-vendored=true
 NHazm/* linguist-vendored=true
 NHazm.Test/* linguist-vendored=true
+
+ThirdParty/NHazm*/* linguist-vendored=true
+ThirdParty/NHazm/* linguist-vendored=true
+ThirdParty/NHazm.Test/* linguist-vendored=true
