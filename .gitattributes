@@ -62,6 +62,7 @@
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
 
+ThirdParty linguist-vendored=true
 ThirdParty/* linguist-vendored=true
 ThirdParty/NHazm/* linguist-vendored=true
 ThirdParty/NHazm.Test/* linguist-vendored=true
