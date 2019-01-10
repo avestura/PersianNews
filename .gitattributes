@@ -62,6 +62,6 @@
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
 
-NHazm/* linguist-vendored
-NHazm.Test/* linguist-vendored
-NHazm*/* linguist-vendored
+NHazm*/* linguist-vendored=true
+NHazm/* linguist-vendored=true
+NHazm.Test/* linguist-vendored=true
