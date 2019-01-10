@@ -6,7 +6,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using PersianNews.Configurations;
 
 namespace PersianNews
 {
@@ -19,11 +18,6 @@ namespace PersianNews
         /// Returnes current app as an <see cref="App"/> instead of an <see cref="Application"/>
         /// </summary>
         public static App CurrentApp => (App)Current;
-
-        /// <summary>
-        /// Returens current <see cref="Configuration"/> of application
-        /// </summary>
-        public Configuration Configuration { get; set; }
 
         public static Frame MainFrame => ((MainWindow)Current.MainWindow).MainFrame;
 
