@@ -497,3 +497,8 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/PersianNews.zip
+/PersianNews.CLI/Data/A_CategoryDetector
+/PersianNews.CLI/Data/B_AgencyDetector
+/PersianNews.CLI/Data/TfIdf/Model1
+/PersianNews.CLI/Data/TfIdf/Model2
