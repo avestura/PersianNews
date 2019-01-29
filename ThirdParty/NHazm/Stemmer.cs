@@ -3,19 +3,26 @@
     public class Stemmer
     {
         private string[] _ends = new string[] {
-            "ات", "ان", "ترین", "تر", "م", "ت", "ش", "یی", "ی", "ها", "ٔ", "‌ا", //
+            "ات", "ان", "ترین", "تر", "م", "ت", "ش", "یی", "ی", "ها", "ٔ"
         };
 
         public string Stem(string word)
         {
+
             foreach (var end in this._ends)
             {
-                if (word.EndsWith(end))
-                    word = word.Substring(0, word.Length - end.Length).Trim('‌');
-            }
+                if (string.Equals(end, word, System.StringComparison.InvariantCultureIgnoreCase))
+                    return "";
 
-            if (word.EndsWith("ۀ"))
-                word = word.Substring(0, word.Length - 1) + "ه";
+                try
+                {
+                    if (word.EndsWith(end))
+                    {
+                        word = word.Substring(0, word.Length - end.Length).Trim();
+                    }
+                }
+                catch { }
+            }
 
             return word;
         }
