@@ -5,12 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Hazm.fs" />
     <Compile Include="CoreTypes.fs" />
-    <Compile Include="Library.fs" />
+    <Compile Include="Algorithms.fs" />
+    <Compile Include="ParseAndCleansing.fs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ThirdParty\NHazm\NHazm.csproj" />
   </ItemGroup>
 
 </Project>
